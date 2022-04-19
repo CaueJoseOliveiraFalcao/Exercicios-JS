@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="area">
+            <section class="div-calculadora">
+                <h1 class="calculadora-titulo">Calculadora - IMC</h1>
+                <hr class="hr-calculadora">
+                <form action="">
+                    <section class="input-area">
+                        <p>Nome:</p>
+                        <input style="width:10rem;padding: 0.5rem;margin-left: 1rem;" type="text" name="nome" id="nome">
+                    </section>
+                    <section class="input-area">
+                        <p>Altura:</p>
+                        <input style="width:10rem;padding: 0.5rem;margin-left: 1rem;" type="text" name="altura"
+                            id="altura">
+                    </section>
+                    <section class="input-area">
+                        <p>Peso:</p>
+                        <input style="width:10rem;padding: 0.5rem;margin-left: 1.2rem;" type="text" name="peso" id="peso">
+                    </section>
+                    <div style="display: flex; flex-direction: column;">
+                    <input type="submit" id="send" value="Enviar" class="buttom-calculadora"></input>
+                    <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+                    </div>
+
+                </form>
+            </section>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
