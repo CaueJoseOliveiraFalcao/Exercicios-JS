@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 100vh;
+}
+.area{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.div-lampada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    font-size: 3rem;
+    text-align: center;
+}
+.img-lam{
+    width: 20rem;
+}
+button{
+    font-size: 1rem;
+    padding: 1rem;
+}
