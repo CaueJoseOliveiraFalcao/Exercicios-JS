@@ -5,15 +5,23 @@ sub.addEventListener("click" , function(e) {
     e.preventDefault();
 
     const name = document.querySelector("#nome").value
-    const altura = document.querySelector('#altura').value
+    let altura = document.querySelector('#altura').value
     const peso = document.querySelector('#peso').value
 
-    function calcularIMC(altura,peso){
-        let resultado = peso/(altura*altura)
+    const resultado = calcularIMC(altura,peso)
+    for (let i = 0; i < altura.length; i++){
+        if (altura[i] == ',' ||  altura[i] == 'm'){
+            alert('Use "." em vez de virgulas e so bote numeros')
+        }
     }
-    const resultado = document.querySelector('#resultado').textContent = 
-    
-    console.log(name,altura,peso)
+    console.log(altura)
+    function calcularIMC(altura,peso){
+        altura = Math.round(altura)
+        peso = Math.round(peso)
+        let resultado = peso/(altura*altura)
+        return resultado
+    }
+    const injet = document.querySelector('#resultado').textContent = 'Seu IMC é = ' + resultado
 })
 
 
