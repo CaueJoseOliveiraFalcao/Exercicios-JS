@@ -14,13 +14,15 @@ sub.addEventListener("click" , function(e) {
             alert('Use "." em vez de virgulas e so bote numeros')
         }
     }
-    console.log(altura)
+    
+
     function calcularIMC(altura,peso){
         altura = Math.round(altura)
         peso = Math.round(peso)
         let resultado = peso/(altura*altura)
+        
         return resultado
-    }
+    } 
     const injet = document.querySelector('#resultado').textContent = 'Seu IMC é = ' + resultado
 })
 
